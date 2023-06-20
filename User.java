@@ -1,13 +1,14 @@
+import java.util.ArrayList;
 import java.util.Date;
 
 public class User {
 
     private Date birthdate;
     private int size;
-    private Photo[] photos;
+    private ArrayList<Photo> photos;
     private Address address;
 
-    public User(Date birthdate, int size, Photo[] photos, Address address) {
+    public User(Date birthdate, int size, ArrayList<Photo> photos, Address address) {
         this.birthdate = birthdate;
         this.size = size;
         this.photos = photos;
@@ -30,11 +31,11 @@ public class User {
         this.size = size;
     }
 
-    public Photo[] getPhotos() {
+    public ArrayList<Photo> getPhotos() {
         return photos;
     }
 
-    public void setPhotos(Photo[] photos) {
+    public void setPhotos(ArrayList<Photo> photos) {
         this.photos = photos;
     }
 
